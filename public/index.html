@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Shaw">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>口红机</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .hint-mask {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      font-size: 30px;
+      color: #fff;
+      background: #000;
+    }
+
+    .hint-mask .text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      white-space: nowrap;
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    @media screen and (orientation: landscape) {
+      .hint-mask {
+        display: none;
+      }
+    }
+
+    #game-wrap i {
+      width: 105px;
+      height: 105px;
+      background: no-repeat center / contain;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hint-mask">
+    <div class="text">请横屏体验游戏</div>
+  </div>
+  <div id="game-wrap"></div>
+</body>
+
+</html>
